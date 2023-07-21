@@ -9,6 +9,14 @@ edition = "2021"
 actix-web = "4.3.1"
 serde = { version = "1.0.173", features = ["derive"] }
 tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread"] }
+sqlx = { version = "0.6.3", default-features = false, features = [
+  "runtime-actix-rustls",
+  "macros",
+  "postgres",
+  "uuid",
+  "chrono",
+  "migrate",
+] }
 
 [lib]
 path = "src/lib.rs"
