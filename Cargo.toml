@@ -18,7 +18,7 @@ sqlx = { version = "0.6.3", default-features = false, features = [
   "migrate",
 ] }
 config = "0.13.3"
-chrono = "0.4.26"
+chrono = { version = "0.4.22", default-features = false, features = ["clock"] }
 uuid = { version = "1.4.1", features = ["v4"] }
 
 [lib]
