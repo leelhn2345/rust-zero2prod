@@ -44,7 +44,7 @@ services:
         value: ${newsletter.DATABASE}
 databases:
   - engine: PG
-    version: "12"
+    version: "15"
     name: newsletter
     production: false
     # num_nodes: 1
