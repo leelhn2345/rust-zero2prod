@@ -29,23 +29,23 @@ services:
     envs:
       - key: APP_DATABASE__USERNAME
         scope: RUN_TIME
-        value: ${newsletter.USERNAME}
+        value: ${newletter_1.USERNAME}
       - key: APP_DATABASE__PASSWORD
         scope: RUN_TIME
-        value: ${newsletter.PASSWORD}
+        value: ${newletter_1.PASSWORD}
       - key: APP_DATABASE__HOST
         scope: RUN_TIME
-        value: ${newsletter.HOSTNAME}
+        value: ${newletter_1.HOSTNAME}
       - key: APP_DATABASE__PORT
         scope: RUN_TIME
-        value: ${newsletter.PORT}
+        value: ${newletter_1.PORT}
       - key: APP_DATABASE__DATABASE_NAME
         scope: RUN_TIME
-        value: ${newsletter.DATABASE}
+        value: ${newletter_1.DATABASE}
 databases:
   - engine: PG
-    version: "15"
-    name: newsletter
+    version: "12"
+    name: newletter_1
     production: false
     # num_nodes: 1
     # size: db-s-dev-database
