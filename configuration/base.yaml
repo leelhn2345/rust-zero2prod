@@ -8,3 +8,8 @@ database:
   password: "password"
   database_name: "newsletter"
   require_ssl: false
+email_client:
+  base_url: "localhost"
+  sender_email: "nelson.leelh@ntu.edu.sg"
+  authorization_token: 40cef9c1-4263-4fa7-ada8-26259849cfe8
+  timeout_milliseconds: 10000
